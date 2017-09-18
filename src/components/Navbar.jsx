@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../stylesheets/Navbar.css';
 import Logo from '../images/logo.png';
 
@@ -15,16 +15,16 @@ class Navbar extends Component {
           </li>
           <div className="navbar-links">
             <li>
-              <Link to="/">Inicio</Link>
+              <NavLink exact to="/" activeClassName="aqua-color">Inicio</NavLink>
             </li>
             <li>
-              <Link to="/team">Equipo</Link>
+              <NavLink to="/team" activeClassName="aqua-color">Equipo</NavLink>
             </li>
             <li>
-              <Link to="/interviews">Entrevistas</Link>
+              <NavLink to="/interviews" activeClassName="aqua-color">Entrevistas</NavLink>
             </li>
             <li>
-              <Link to="/reactions">Reacciones</Link>
+              <NavLink to="/reactions" activeClassName="aqua-color">Reacciones</NavLink>
             </li>
           </div>
         </ul>

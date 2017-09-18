@@ -5,8 +5,8 @@
 }
 
 .video-divider {
-  height: 10px;
-  width: 90%;
-  background-color: white;
+  height: 1px;
+  width: 80%;
+  background-color: #65737e;
   border: none;
 }
