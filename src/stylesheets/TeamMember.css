@@ -1,0 +1,39 @@
+.team-member {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-member-image {
+  width: 20%;
+}
+
+.team-member-description {
+  width: 75%;
+  color: white;
+}
+
+.left {
+  order: 1;
+}
+
+.right {
+  order: 2;
+}
+
+.left-header{
+  text-align: left;
+}
+
+.right-header {
+  text-align: right;
+}
+
+.team-member-divider {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  order: 3;
+}
