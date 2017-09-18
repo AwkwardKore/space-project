@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import '../stylesheets/App.css';
-import Video from './Video';
 import Navbar from './Navbar';
+import Main from './Main';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <Video />
+        <Main />
       </div>
     );
   }

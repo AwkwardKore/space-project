@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../stylesheets/Navbar.css';
 import Logo from '../images/logo.png';
 
@@ -14,24 +15,16 @@ class Navbar extends Component {
           </li>
           <div className="navbar-links">
             <li>
-              <a>
-                Inicio
-              </a>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
-              <a>
-                Equipo
-              </a>
+              <Link to="/team">Equipo</Link>
             </li>
             <li>
-              <a>
-                Entrevistas
-              </a>
+              <Link to="/interviews">Entrevistas</Link>
             </li>
             <li>
-              <a>
-                Reacciones
-              </a>
+              <Link to="/reactions">Reacciones</Link>
             </li>
           </div>
         </ul>
