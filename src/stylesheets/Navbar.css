@@ -6,7 +6,15 @@
 }
 
 .navbar-links {
-  float: right;
+  align-self: center;
+}
+
+.logo-container {
+  width: 20%;
+}
+
+.logo {
+  width: 100%;
 }
 
 ul {
@@ -15,10 +23,12 @@ ul {
   padding: 0;
   overflow: hidden;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
