@@ -20,13 +20,12 @@ class TeamMember extends Component {
     });
     return(
       <div className="team-member">
-        <img src={this.props.imageSrc} className={imgClass} alt="Team Member"/>
+        <img src={require("../images/"+this.props.imageSrc)} className={imgClass} alt="Team Member"/>
         <div className={textClass}>
-          <h2 className={headerClass}>Nombre</h2>
-          <h4 className={headerClass}>Encargo</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h2 className={headerClass}>{this.props.name}</h2>
+          <h4 className={headerClass}>{this.props.title}</h4>
+          <p dangerouslySetInnerHTML={this.props.text}></p>
         </div>
-        <hr className="team-member-divider" />
       </div>
     );
   }

@@ -3,3 +3,16 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.team-member-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-member-divider {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  border: none;
+}

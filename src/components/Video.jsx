@@ -6,9 +6,9 @@ class Video extends Component {
   render() {
     return (
       <div className="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vllGDvcf4qk?rel=0" frameBorder="0" allowFullScreen></iframe>
+        <iframe width="560" height="315" src={this.props.videoUrl} frameBorder="0" allowFullScreen></iframe>
         <hr className="video-divider" />
-        <VideoText text={this.props.text}/>
+        <VideoText text={this.props.videoDescription}/>
       </div>
     );
   }

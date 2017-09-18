@@ -1,5 +1,5 @@
 .team-member {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -7,6 +7,8 @@
 
 .team-member-image {
   width: 20%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team-member-description {
@@ -28,12 +30,4 @@
 
 .right-header {
   text-align: right;
-}
-
-.team-member-divider {
-  height: 10px;
-  width: 100%;
-  background-color: white;
-  border: none;
-  order: 3;
 }
